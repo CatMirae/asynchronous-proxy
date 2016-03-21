@@ -1,0 +1,6 @@
+async_proxy:
+  environment:
+    - PROXY_PORT
+  build: .
+  ports:
+    - "${PROXY_PORT}:${PROXY_PORT}"
